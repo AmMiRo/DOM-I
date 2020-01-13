@@ -100,3 +100,19 @@ contactParagraphs[2].textContent = siteContent["contact"]["email"];
 // Footer
 const footer = document.querySelector("footer p");
 footer.textContent = siteContent["footer"]["copyright"];
+
+// New Elements
+const newNavItem = document.createElement("a");
+newNavItem.textContent = "Team";
+newNavItem.setAttribute("href", "#");
+document.querySelector("nav").appendChild(newNavItem);
+
+const newerNavItem = document.createElement("a");
+newerNavItem.textContent = "Schedule";
+newerNavItem.setAttribute("href", "#");
+document.querySelector("nav").appendChild(newerNavItem);
+
+// NavItems text to green
+document.querySelector("nav a").forEach(a => {
+  a.style.color = "green";
+});
